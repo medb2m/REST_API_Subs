@@ -19,7 +19,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/subs').then(()=> {
 app.use(express.json())
 
 const subsRouter = require('./routes/subs')
+app.use('/subs', subsRouter)
 
-app.listen(3000, ()=>{
+app.listen(8080, ()=>{
     console.log('Server Started !')
 })
