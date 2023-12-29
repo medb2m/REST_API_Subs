@@ -3,3 +3,14 @@ GET http://localhost:8080/subs
 ###
 
 GET http://localhost:8080/subs/12
+
+###
+
+POST http://localhost:8080/subs/
+
+Content-Type: application/json
+
+{
+    "name" : "Randy Orton",
+    "subscribedToChanel" : "IgeekB2m"
+}
