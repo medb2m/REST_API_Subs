@@ -2,15 +2,18 @@ GET http://localhost:8080/subs
 
 ###
 
-GET http://localhost:8080/subs/12
+GET http://localhost:8080/subs/658f4a297f6fd7d29d2963da
 
 ###
 
 POST http://localhost:8080/subs/
-
 Content-Type: application/json
 
 {
     "name" : "Randy Orton",
     "subscribedToChanel" : "IgeekB2m"
 }
+
+###
+
+DELETE http://localhost:8080/subs/658f4a297f6fd7d29d2963da
